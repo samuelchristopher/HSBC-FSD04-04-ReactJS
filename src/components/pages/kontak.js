@@ -31,7 +31,11 @@ function Kontak() {
                     <li className="my-3">
                       <div className="flex space-x-5">
                         <div>
-                          <a href="https://github.com/samuelchristopher">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/samuelchristopher"
+                          >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               class="h-5 w-5"
@@ -43,7 +47,11 @@ function Kontak() {
                           </a>
                         </div>
                         <div>
-                          <a href="https://www.linkedin.com/in/samuel-christopher-santo/">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.linkedin.com/in/samuel-christopher-santo/"
+                          >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               class="h-5 w-5"
