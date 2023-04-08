@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function Header() {
@@ -26,24 +26,15 @@ function Header() {
             <div className="flex space-x-4">
               {/* <!-- primary nav --> */}
               <div className="hidden md:flex items-center space-x-1">
-                <a
-                  href="#"
-                  className="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >
-                  Beranda
-                </a>
-                <a
-                  href="#"
-                  className="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >
-                  Portfolio
-                </a>
-                <a
-                  href="#"
-                  className="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >
-                  Kontak
-                </a>
+                <div className="py-5 px-3 text-gray-700 hover:text-gray-900">
+                  <Link to="/">Beranda</Link>
+                </div>
+                <div className="py-5 px-3 text-gray-700 hover:text-gray-900">
+                  <Link to="/portfolio">Portfolio</Link>
+                </div>
+                <div className="py-5 px-3 text-gray-700 hover:text-gray-900">
+                  <Link to="/kontak">Kontak</Link>
+                </div>
               </div>
             </div>
 
@@ -72,15 +63,15 @@ function Header() {
         {/* <!-- mobile menu --> */}
         <div className="flex justify-center">
           <div className="mobile-menu hidden md:hidden">
-            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Beranda
-            </a>
-            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Portfolio
-            </a>
-            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Kontak
-            </a>
+            <div className="block py-2 px-4 text-sm hover:bg-gray-200">
+              <Link to="/">Beranda</Link>
+            </div>
+            <div className="block py-2 px-4 text-sm hover:bg-gray-200">
+              <Link to="/portfolio">Portfolio</Link>
+            </div>
+            <div className="block py-2 px-4 text-sm hover:bg-gray-200">
+              <Link to="/kontak">Kontak</Link>
+            </div>
           </div>
         </div>
       </nav>
